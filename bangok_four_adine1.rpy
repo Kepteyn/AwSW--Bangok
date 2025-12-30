@@ -502,10 +502,13 @@ label bangok_four_adine1:
         c "I'd be lying if I said no."
         Ad annoyed b "Alright then."
         hide adine with dissolve
+        show adine_butt1 with dissolve
+        $ renpy.pause(2.0)
         m "Without another word, Adine turned around and lifted her tail high as can be, showing me her gorgeous posterior in all its glory."
         Ad giggle b "Enjoying the view?"
         c "I most certainly am, thank you."
         Ad normal b "Good, because it looks like the rain has stopped, which means it's time for me to go."
+        hide adine_butt1 with dissolve
         show adine normal b with dissolve
         m "Adine wrote a string of numbers on a scrap of paper and slid it to me."
         Ad "Here, no need to order food if you want to stare at me again."
@@ -523,6 +526,8 @@ label bangok_four_adine1:
         Ad giggle b "My, such a forward demand. I like it."
         c "So?"
         hide adine with dissolve
+        show adine_butt1 with dissolve
+        $ renpy.pause(2.0)
         m "Adine answered my question by turning around and curling her tail upwards, bringing the crescent at the end back to spread her visibly damp slit."
         Ad disappoint b "I'll admit, I got a bit horny hanging around here. Just a shame this is the first date."
         c "I wouldn't mind helping you out, you know."
@@ -534,6 +539,8 @@ label bangok_four_adine1:
         Ad giggle b "Good, because it looks like it's stopped raining. I have to go home and also masturbate."
         $ renpy.pause (1.0)
         m "Finally, she let her tail down, the top dripping slightly on my floor as she grabbed some paper and scrawled her phone number on." ## The "top" of what?
+        hide adine_butt1 with dissolve
+        show adine normal b with dissolve
         stop music fadeout 1.0
         m "After exchanging goodbyes with me, Adine started heading out the door. Though, on her way out, she moved her tail out of the way again and smirked back at me, teasing me further."
         play sound "fx/door/doorclose3.wav"
@@ -553,8 +560,9 @@ label bangok_four_adine1:
         ## Implement the eject sequence here for if the player doesn't want to fuck Adine, unless the opening counted as the eject sequence.
         stop music fadeout 2.0
         play sound ["fx/silence.ogg","fx/silence.ogg","fx/silence.ogg","fx/undress.ogg"]
-        show black with dissolve
-        $ renpy.pause(0.4)
+        # show black with dissolve
+        show adine_butt1 with dissolve
+        $ renpy.pause(2.0)
         m "Without thinking about it, I obediently got on my back and waited patiently for Adine to approach."
         m "As promised, she offered more than just flashing me her rear. She sat on my chest and looked down into my eyes, her wet slit rubbing against me."
         m "As our gazes met, and a blush covered her face, she spoke in a low, gentle tone."
@@ -575,7 +583,8 @@ label bangok_four_adine1:
         m "As she started to wind down, she slowly rolled off of me, letting me sit up and meet her gaze."
         $ renpy.pause (0.3)
         play sound "fx/undress.ogg"
-        hide black
+        # hide black
+        show adine_butt1 with dissolve
         show adine giggle b
         with dissolvemed
         Ad "Thanks, I really needed that."

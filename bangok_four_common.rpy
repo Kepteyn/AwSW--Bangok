@@ -382,6 +382,13 @@ init:
         (0,0), "cg/bangok/adineshower/adineshower_annoyed.png",
     )
 
+    image adine_butt1 = bangok_four_common.LayeredImage([
+        bangok_four_common.Always("cr/bangok/adine_butt_1c.png"),
+        bangok_four_common.PersistentConditionalLayer(
+            'bangok_cloacas', None,
+            None, "cr/bangok/adine_butt_1p.png",
+        ),
+    ])
 
     # Because "Requiem for Crimson Scales" redefines the base-game
     #  Bryce dark sprites with the same names, now I have to do this
